@@ -15,7 +15,10 @@ public class ActionsClass extends Base {
 		WebElement dragOptions1=driver.findElement(By.xpath("//span[text()='Draggable n°1']"));
 		WebElement dotBox=driver.findElement(By.xpath("//div[@id='mydropzone']"));
 		Actions actions=new Actions(driver);
-	    actions.moveToElement(dragOptions1).build().perform();
+	  //  actions.moveToElement(dragOptions1).build().perform();
+		//actions.contextClick(dragOptions1).perform();
+		//actions.doubleClick(dragOptions1).perform();
+		actions.dragAndDrop(dragOptions1, dotBox).perform();
 	}
 
 }

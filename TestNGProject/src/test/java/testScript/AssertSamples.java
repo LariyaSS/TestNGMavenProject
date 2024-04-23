@@ -21,7 +21,7 @@ public class AssertSamples extends Base {
 		String actualBackGroungColour=getTotalButton.getCssValue("background-color");
 		//convert rgba to hex
 		String actualHexBackGroundColorGetTotal = Color.fromString(actualBackGroungColour).asHex();
-		assertEquals(expectedHexBackGroundColorGetTotal, actualHexBackGroundColorGetTotal,"Background colour of getTotal button"+expectedHexBackGroundColorGetTotal);
+		assertEquals(expectedHexBackGroundColorGetTotal, actualHexBackGroundColorGetTotal,"Background colour of getTotal button is not"+expectedHexBackGroundColorGetTotal);
 	}
 
 	@Test
